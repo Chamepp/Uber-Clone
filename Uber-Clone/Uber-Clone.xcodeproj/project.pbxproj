@@ -12,6 +12,7 @@
 		41B017AB29AA481A00DEBC88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B017AA29AA481A00DEBC88 /* Preview Assets.xcassets */; };
 		41B017B929AA4ACD00DEBC88 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B017B829AA4ACD00DEBC88 /* HomeView.swift */; };
 		41B017BB29AF514E00DEBC88 /* UberMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B017BA29AF514E00DEBC88 /* UberMapViewRepresentable.swift */; };
+		41B017BD29AF549400DEBC88 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B017BC29AF549400DEBC88 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		41B017AA29AA481A00DEBC88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		41B017B829AA4ACD00DEBC88 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		41B017BA29AF514E00DEBC88 /* UberMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberMapViewRepresentable.swift; sourceTree = "<group>"; };
+		41B017BC29AF549400DEBC88 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		41B017B429AA4A1B00DEBC88 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				41B017BC29AF549400DEBC88 /* LocationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B017BD29AF549400DEBC88 /* LocationManager.swift in Sources */,
 				41B017A429AA481900DEBC88 /* Uber_CloneApp.swift in Sources */,
 				41B017BB29AF514E00DEBC88 /* UberMapViewRepresentable.swift in Sources */,
 				41B017B929AA4ACD00DEBC88 /* HomeView.swift in Sources */,
@@ -329,6 +333,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Uber-Clone/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow location to find near drivers and locations";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -357,6 +362,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Uber-Clone/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow location to find near drivers and locations";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
