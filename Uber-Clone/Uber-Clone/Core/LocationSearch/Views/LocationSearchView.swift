@@ -41,6 +41,10 @@ struct LocationSearchView: View {
                 }
             }
             .padding(.horizontal)
+            .padding(.top, 64)
+            
+            Divider()
+                .padding(.vertical)
             
             ScrollView {
                 VStack(alignment: .leading) {
@@ -50,6 +54,7 @@ struct LocationSearchView: View {
                 }
             }
         }
+        .background(.white)
     }
 }
 
