@@ -4,7 +4,6 @@
 //
 //  Created by Ashkan Ebtekari on 3/1/23.
 //
-
 import Foundation
 import SwiftUI
 import MapKit
