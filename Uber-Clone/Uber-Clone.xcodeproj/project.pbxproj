@@ -21,8 +21,8 @@
 		41B017A329AA481900DEBC88 /* Uber_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uber_CloneApp.swift; sourceTree = "<group>"; };
 		41B017A729AA481A00DEBC88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41B017AA29AA481A00DEBC88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		41B017B829AA4ACD00DEBC88 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = Views/HomeView.swift; sourceTree = "<group>"; };
-		41B017BA29AF514E00DEBC88 /* UberMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UberMapViewRepresentable.swift; path = Views/UberMapViewRepresentable.swift; sourceTree = "<group>"; };
+		41B017B829AA4ACD00DEBC88 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		41B017BA29AF514E00DEBC88 /* UberMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberMapViewRepresentable.swift; sourceTree = "<group>"; };
 		41B017BC29AF549400DEBC88 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		41B017C229B0C1FD00DEBC88 /* LocationSearchActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchActivationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,8 +87,6 @@
 		41B017B229AA49FB00DEBC88 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				41B017B829AA4ACD00DEBC88 /* HomeView.swift */,
-				41B017BA29AF514E00DEBC88 /* UberMapViewRepresentable.swift */,
 				41B017BF29B0C19C00DEBC88 /* LocationSearch */,
 				41B017BE29B0C17C00DEBC88 /* Home */,
 			);
@@ -127,6 +125,8 @@
 		41B017B729AA4AAC00DEBC88 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				41B017B829AA4ACD00DEBC88 /* HomeView.swift */,
+				41B017BA29AF514E00DEBC88 /* UberMapViewRepresentable.swift */,
 			);
 			name = Views;
 			path = ../Views;
