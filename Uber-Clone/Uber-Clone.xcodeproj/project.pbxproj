@@ -14,6 +14,7 @@
 		41B017C329B0C1FD00DEBC88 /* LocationSearchActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B017C229B0C1FD00DEBC88 /* LocationSearchActivationView.swift */; };
 		41EAA9BA29B0E1E700108417 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EAA9B929B0E1E700108417 /* HomeView.swift */; };
 		41EAA9BC29B0E22E00108417 /* UberMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EAA9BB29B0E22E00108417 /* UberMapViewRepresentable.swift */; };
+		41EAA9BE29B0E44C00108417 /* MapViewActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EAA9BD29B0E44C00108417 /* MapViewActionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		41B017C229B0C1FD00DEBC88 /* LocationSearchActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchActivationView.swift; sourceTree = "<group>"; };
 		41EAA9B929B0E1E700108417 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = "Uber-Clone/Core/LocationSearch/Views/HomeView.swift"; sourceTree = SOURCE_ROOT; };
 		41EAA9BB29B0E22E00108417 /* UberMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UberMapViewRepresentable.swift; path = "Uber-Clone/Core/LocationSearch/Views/UberMapViewRepresentable.swift"; sourceTree = SOURCE_ROOT; };
+		41EAA9BD29B0E44C00108417 /* MapViewActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewActionButton.swift; path = "Uber-Clone/Core/LocationSearch/Views/MapViewActionButton.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			children = (
 				41EAA9B929B0E1E700108417 /* HomeView.swift */,
 				41EAA9BB29B0E22E00108417 /* UberMapViewRepresentable.swift */,
+				41EAA9BD29B0E44C00108417 /* MapViewActionButton.swift */,
 			);
 			name = Views;
 			path = ../Views;
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41B017BD29AF549400DEBC88 /* LocationManager.swift in Sources */,
+				41EAA9BE29B0E44C00108417 /* MapViewActionButton.swift in Sources */,
 				41EAA9BA29B0E1E700108417 /* HomeView.swift in Sources */,
 				41B017A429AA481900DEBC88 /* Uber_CloneApp.swift in Sources */,
 				41B017C329B0C1FD00DEBC88 /* LocationSearchActivationView.swift in Sources */,
