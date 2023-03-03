@@ -12,6 +12,7 @@ import MapKit
 struct UberMapViewRepresentable: UIViewRepresentable {
     let map_view = MKMapView()
     let location_manager = LocationManager()
+    @EnvironmentObject var location_view_model: LocationSearchViewModel
     
     func makeUIView(context: Context) -> some UIView {
         map_view.delegate = context.coordinator
@@ -23,7 +24,9 @@ struct UberMapViewRepresentable: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UIViewType, context: Context) {
-        
+        if let coordinate = location_view_model.selected_location_coordinate {
+            print("DEBUG: Selected coordinates in map view \(coordinate)")
+        }
     }
     func makeCoordinator() -> MapCoordinator {
         return MapCoordinator(parent: self)
