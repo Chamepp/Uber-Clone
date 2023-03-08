@@ -65,12 +65,67 @@ struct RideRequestView: View {
                 HStack(spacing: 12) {
                     ForEach(0 ..< 3, id: \.self) { _ in
                         VStack(alignment: .leading) {
-                            Image(systemName: "uber-x")
+                            Image("uber-x")
+                                .resizable()
+                                .scaledToFit()
+                            
+                            VStack(spacing: 4) {
+                                Text("UberX")
+                                    .font(.system(size: 14, weight: .semibold))
+                                
+                                Text("$18.43")
+                                    .font(.system(size: 14, weight: .semibold))
+                            }
+                            .padding(8)
                         }
+                        .frame(width: 112, height: 140)
+                        .background(Color(.systemGroupedBackground))
+                        .cornerRadius(10)
                     }
                 }
             }
+            .padding(.horizontal)
+            
+            Divider()
+                .padding(.vertical, 8)
+            
+            
+            HStack(spacing: 12) {
+                Text("Visa")
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .padding(6)
+                    .background(.blue)
+                    .cornerRadius(4)
+                    .foregroundColor(.white)
+                    .padding(.leading)
+                
+                Text("**** 1234")
+                    .fontWeight(.bold)
+                
+                Spacer()
+                
+                Image(systemName: "chevron.right")
+                    .imageScale(.medium)
+                    .padding()
+            }
+            .frame(height: 50)
+            .background(Color(.systemGroupedBackground))
+            .cornerRadius(10)
+            .padding(.horizontal)
+            
+            Button {
+                print("CONFIRM RIDE")
+            } label: {
+                Text("CONFIRM RIDE")
+                    .fontWeight(.bold)
+                    .frame(width: UIScreen.main.bounds.width - 32, height: 50)
+                    .background(.blue)
+                    .cornerRadius(10)
+                    .foregroundColor(.white)
+            }
         }
+        .background(.white)
     }
 }
 
