@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		417966EC29B861F1000A7184 /* RideRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417966EB29B861F1000A7184 /* RideRequestView.swift */; };
 		41B017A429AA481900DEBC88 /* Uber_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B017A329AA481900DEBC88 /* Uber_CloneApp.swift */; };
 		41B017A829AA481A00DEBC88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B017A729AA481A00DEBC88 /* Assets.xcassets */; };
 		41B017AB29AA481A00DEBC88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B017AA29AA481A00DEBC88 /* Preview Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		417966EB29B861F1000A7184 /* RideRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideRequestView.swift; sourceTree = "<group>"; };
 		41B017A029AA481900DEBC88 /* Uber-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uber-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B017A329AA481900DEBC88 /* Uber_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uber_CloneApp.swift; sourceTree = "<group>"; };
 		41B017A729AA481A00DEBC88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		417966EA29B861CD000A7184 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				417966EB29B861F1000A7184 /* RideRequestView.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
 		41B0179729AA481900DEBC88 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		41B017B229AA49FB00DEBC88 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				417966EA29B861CD000A7184 /* Trip */,
 				41B017BF29B0C19C00DEBC88 /* LocationSearch */,
 				41B017BE29B0C17C00DEBC88 /* Home */,
 			);
@@ -253,6 +264,7 @@
 				41EAA9C529B21C3B00108417 /* LocationSearchViewModel.swift in Sources */,
 				41EAA9C029B0E5F600108417 /* LocationSearchView.swift in Sources */,
 				41B017BD29AF549400DEBC88 /* LocationManager.swift in Sources */,
+				417966EC29B861F1000A7184 /* RideRequestView.swift in Sources */,
 				41EAA9C729B5CBCF00108417 /* MapViewState.swift in Sources */,
 				41EAA9BE29B0E44C00108417 /* MapViewActionButton.swift in Sources */,
 				41EAA9BA29B0E1E700108417 /* HomeView.swift in Sources */,
