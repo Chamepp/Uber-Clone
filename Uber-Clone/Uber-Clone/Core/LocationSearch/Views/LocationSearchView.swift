@@ -52,13 +52,16 @@ struct LocationSearchView: View {
                     ForEach(view_model.results, id: \.self) { result in
                         LocationSearchResultCell(title: result.title, subtitle: result.subtitle)
                             .onTapGesture {
-                                map_state = .locationSelected
-                                view_model.select_location(result)
+                                withAnimation(.spring()) {
+                                    map_state = .locationSelected
+                                    view_model.select_location(result)
+                                }
                             }
                     }
                 }
             }
         }
+        .background(Color.theme.background_color)
         .background(.white)
     }
 }
