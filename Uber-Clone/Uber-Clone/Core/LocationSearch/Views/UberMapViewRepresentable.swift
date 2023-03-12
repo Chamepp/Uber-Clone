@@ -11,7 +11,7 @@ import MapKit
 
 struct UberMapViewRepresentable: UIViewRepresentable {
     let map_view = MKMapView()
-    let location_manager = LocationManager()
+    let location_manager = LocationManager.shared
     @Binding var map_state: MapViewState
     @EnvironmentObject var location_view_model: LocationSearchViewModel
     
@@ -25,19 +25,21 @@ struct UberMapViewRepresentable: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UIViewType, context: Context) {
-        print("DEBUG: Map state is \(map_state)")
-        
         switch map_state {
-        case .noInput:
-            context.coordinator.clear_map_view_and_recenter_on_user_location()
-            break
-        case .searchingForLocation:
-            break
-        case .locationSelected:
-            if let coordinate = location_view_model.selected_location_coordinate {
-                context.coordinator.add_and_select_annotation(with_coordinate: coordinate)
-                context.coordinator.configure_polyline(with_destination_coordinate: coordinate)
-            }
+            case .noInput:
+                context.coordinator.clear_map_view_and_recenter_on_user_location()
+                break
+            case .searchingForLocation:
+                break
+            case .locationSelected:
+                if let coordinate = location_view_model.selected_uber_location?.coordinate {
+                    print("DEBUG: Adding stuff to map")
+                    context.coordinator.add_and_select_annotation(with_coordinate: coordinate)
+                    context.coordinator.configure_polyline(with_destination_coordinate: coordinate)
+                }
+                break
+            case .polylineAdded:
+                break
         }
     }
     func makeCoordinator() -> MapCoordinator {
@@ -81,35 +83,27 @@ extension UberMapViewRepresentable {
             
             let anno = MKPointAnnotation()
             anno.coordinate = coordinate
-            self.parent.map_view.addAnnotation(anno)
-            self.parent.map_view.selectAnnotation(anno, animated: true)
+            parent.map_view.addAnnotation(anno)
+            parent.map_view.selectAnnotation(anno, animated: true)
             
-            parent.map_view.showAnnotations(parent.map_view.annotations, animated: true)
         }
         
         func configure_polyline(with_destination_coordinate coordinate: CLLocationCoordinate2D) {
             guard let user_location_coordinate = self.user_location_coordinate else { return }
 
-            get_destination_route(from: user_location_coordinate, to: coordinate) { route in
+            parent.location_view_model.get_destination_route(from: user_location_coordinate, to: coordinate) { route in
                 self.parent.map_view.addOverlay(route.polyline)
-            }
-        }
-        
-        func get_destination_route(from user_location: CLLocationCoordinate2D, to destination: CLLocationCoordinate2D, completion: @escaping(MKRoute) -> Void) {
-            let user_place_mark = MKPlacemark(coordinate: user_location)
-            let destination_place_mark = MKPlacemark(coordinate: destination)
-            let request = MKDirections.Request()
-            request.source = MKMapItem(placemark: user_place_mark)
-            request.destination = MKMapItem(placemark: destination_place_mark)
-            let directions = MKDirections(request: request)
-            
-            directions.calculate { response, error in
-                if let error = error {
-                    print("DEBUG: Failed to get directions with error \(error.localizedDescription)")
-                    return
-                }
-                guard let route = response?.routes.first else { return }
-                completion(route)
+                self.parent.map_state = .polylineAdded
+                let rect = self.parent.map_view.mapRectThatFits(
+                    route.polyline.boundingMapRect,
+                    edgePadding: .init(
+                        top: 64,
+                        left: 32,
+                        bottom: 500,
+                        right: 32
+                    )
+                )
+                self.parent.map_view.setRegion(MKCoordinateRegion(rect), animated: true)
             }
         }
         
