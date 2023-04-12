@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4135DBCC29E692DB001AF77E /* Screenshot-Three.png in Resources */ = {isa = PBXBuildFile; fileRef = 4135DBC829E692DA001AF77E /* Screenshot-Three.png */; };
+		4135DBCD29E692DB001AF77E /* App-Preview.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4135DBC929E692DB001AF77E /* App-Preview.mp4 */; };
+		4135DBCE29E692DB001AF77E /* Screenshot-One.png in Resources */ = {isa = PBXBuildFile; fileRef = 4135DBCA29E692DB001AF77E /* Screenshot-One.png */; };
+		4135DBCF29E692DB001AF77E /* Screenshot-Two.png in Resources */ = {isa = PBXBuildFile; fileRef = 4135DBCB29E692DB001AF77E /* Screenshot-Two.png */; };
 		4142CC6429BE1BA300F1B98E /* UberLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4142CC6329BE1BA300F1B98E /* UberLocation.swift */; };
 		4142CC6629BE26C600F1B98E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4142CC6529BE26C600F1B98E /* Color.swift */; };
 		415B600C29BCDBC900296449 /* RideType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415B600B29BCDBC900296449 /* RideType.swift */; };
@@ -27,6 +31,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4135DBC829E692DA001AF77E /* Screenshot-Three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot-Three.png"; sourceTree = "<group>"; };
+		4135DBC929E692DB001AF77E /* App-Preview.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "App-Preview.mp4"; sourceTree = "<group>"; };
+		4135DBCA29E692DB001AF77E /* Screenshot-One.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot-One.png"; sourceTree = "<group>"; };
+		4135DBCB29E692DB001AF77E /* Screenshot-Two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot-Two.png"; sourceTree = "<group>"; };
 		4142CC6329BE1BA300F1B98E /* UberLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberLocation.swift; sourceTree = "<group>"; };
 		4142CC6529BE26C600F1B98E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		415B600B29BCDBC900296449 /* RideType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideType.swift; sourceTree = "<group>"; };
@@ -58,6 +66,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4135DBC729E692C9001AF77E /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				4135DBC929E692DB001AF77E /* App-Preview.mp4 */,
+				4135DBCA29E692DB001AF77E /* Screenshot-One.png */,
+				4135DBC829E692DA001AF77E /* Screenshot-Three.png */,
+				4135DBCB29E692DB001AF77E /* Screenshot-Two.png */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
 		417966EA29B861CD000A7184 /* Trip */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +104,7 @@
 		41B017A229AA481900DEBC88 /* Uber-Clone */ = {
 			isa = PBXGroup;
 			children = (
+				4135DBC729E692C9001AF77E /* Files */,
 				41B017B129AA49EB00DEBC88 /* App */,
 				41B017B229AA49FB00DEBC88 /* Core */,
 				41B017B329AA4A0800DEBC88 /* Extentions */,
@@ -262,6 +282,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				41B017AB29AA481A00DEBC88 /* Preview Assets.xcassets in Resources */,
+				4135DBCC29E692DB001AF77E /* Screenshot-Three.png in Resources */,
+				4135DBCD29E692DB001AF77E /* App-Preview.mp4 in Resources */,
+				4135DBCE29E692DB001AF77E /* Screenshot-One.png in Resources */,
+				4135DBCF29E692DB001AF77E /* Screenshot-Two.png in Resources */,
 				41B017A829AA481A00DEBC88 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
