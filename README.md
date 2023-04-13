@@ -1,5 +1,10 @@
 # Uber-Clone
-A clone of the Uber ride-sharing application that allows users to request and pay for rides from their mobile devices. 
+A clone of the Uber ride-sharing application that allows users to request and pay for rides from their mobile devices.
+
+<video width="320" height="240" controls>
+  <source src="VIDEO_URL" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 # Usage
 
