@@ -12,8 +12,8 @@ The main problem that this repository solves is the need for a ride-sharing plat
 # Installation
 
 1. Clone the repository: git clone https://github.com/Chamepp/Uber-Clone.git
-2. Install dependencies: npm install
-3. Start the application: npm start
+2. Install dependencies
+3. Start the application
 
 <img height=600 src="https://github.com/Chamepp/Uber-Clone/blob/main/Uber-Clone/Uber-Clone/Files/Screenshot-Three.png">
 
